@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0, python main_test.py \
+--n_gpu 1 \
+--image_dir /home/fzu/jusibo/dataset/chexpertplus/PNG/ \
+--ann_path /home/fzu/jusibo/dataset/reproduce/PromptMRG-ablation/PromptMRG-llama-TextDecoder/data/chexpert_plus/chexpertplus_annotation_promptmrg.json \
+--dataset_name chexpert_plus \
+--gen_max_len 150 \
+--gen_min_len 100 \
+--batch_size 16 \
+--save_dir /home/fzu/jusibo/dataset/reproduce/PromptMRG-ablation/PromptMRG-llama-TextDecoder/results/chexpertplus/promptmrg/bs16_cuda0_port12315/ \
+--seed 456789 \
+--clip_k 21 \
+--beam_size 3 \
+--load_pretrained /home/fzu/jusibo/dataset/reproduce/PromptMRG-ablation/PromptMRG-llama-TextDecoder/results/chexpertplus/promptmrg/bs16_cuda0_port12315/model_best.pth
